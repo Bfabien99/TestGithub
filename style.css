@@ -1,6 +1,7 @@
-body{
-    display: flex;
-    justify-content: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1{
@@ -9,4 +10,50 @@ h1{
 
 p{
     color: blue;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #f3f3f3;
+    min-height: 100vh;
+}
+
+nav{
+    background: #031735; 
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    width: 100%;
+    height: 30px;
+    background: #5C9DFF;
+    margin: 10px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+nav ul li:hover{
+    background: cornflowerblue;
+    cursor: pointer;
+}
+
+.main{
+    background: #fefefe;
+    padding: 5px 20px;
+    height: 100vh;
+    overflow: auto;
 }
